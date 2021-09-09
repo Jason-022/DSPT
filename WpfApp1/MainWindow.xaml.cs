@@ -39,17 +39,22 @@ namespace WpfApp1
             Empleado.Edad = hoy.Days / 365;
             formulario.Add(Empleado);
 
-            
+            TxtNombre.Clear();
+            TxtSueldo.Clear();
+            TxtCargo.SelectedIndex = -1;
+            TxtFecha.SelectedDate = null;
 
 
-            
 
 
-            
 
-            
+
+
+
             Data.ItemsSource = null;
             Data.ItemsSource = formulario;
+
+
             
 
         }

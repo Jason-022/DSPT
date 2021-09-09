@@ -5,20 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid RenderTransformOrigin="1.295,0.508">
-        <TextBox x:Name="TxtNombre" HorizontalAlignment="Left" Height="23" Margin="111,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.107,2.43"/>
-        <Button x:Name="btn" Content="Button" HorizontalAlignment="Left" Margin="185,177,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Click"/>
-        <DataGrid x:Name="Data" HorizontalAlignment="Left" Height="159" Margin="111,220,0,0" VerticalAlignment="Top" Width="224"/>
-        <Label x:Name="TxtNombre1" Content="Nombre: " HorizontalAlignment="Left" Margin="42,107,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Fecha de nacimiento: " HorizontalAlignment="Left" Margin="231,104,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label" Content="Cargo:" HorizontalAlignment="Left" Margin="514,108,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="TxtCargo" HorizontalAlignment="Left" Margin="563,110,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Operador de Empacadora"/>
-        </ComboBox>
-        <Label x:Name="label2" Content="Sueldo: " HorizontalAlignment="Left" Margin="425,196,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TxtSueldo" HorizontalAlignment="Left" Height="23" Margin="482,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <DatePicker x:Name="TxtFecha" HorizontalAlignment="Left" Margin="356,107,0,0" VerticalAlignment="Top"/>
+        Title="Carnets: SH210738_EV210855" Height="450" Width="569" Background="Transparent">
+    <Border Background="LightGray">
+        <Grid>
+            <TextBox x:Name="TxtNombre" HorizontalAlignment="Left" Height="23" Margin="150,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" RenderTransformOrigin="-0.107,2.43"/>
+            <Button Background="SteelBlue" x:Name="btn" Content="Ingresar" HorizontalAlignment="Left" Margin="410,172,0,0" VerticalAlignment="Top" Width="105" Click="Btn_Click" Height="25"/>
+            <DataGrid x:Name="Data" HorizontalAlignment="Left" Height="159" Margin="85,225,0,0" VerticalAlignment="Top" Width="435"/>
+            <Label x:Name="TxtNombre1" Content="Nombre completo: " HorizontalAlignment="Left" Margin="21,39,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Fecha de nacimiento: " HorizontalAlignment="Left" Margin="18,80,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label" Content="Cargo:" HorizontalAlignment="Left" Margin="18,119,0,0" VerticalAlignment="Top" Width="104"/>
+            <ComboBox x:Name="TxtCargo" HorizontalAlignment="Left" Margin="150,135,0,0" VerticalAlignment="Top" Width="190">
+                <ComboBoxItem Content="Operador de Empacadora"/>
+                <ComboBoxItem Content="Operario de fundicion"/>
+                <ComboBoxItem Content="Coordinador de Bodega"/>
+                <ComboBoxItem Content="Supervisor de producción"/>
+                <ComboBoxItem Content="Director de operaciones"/>
+                <ComboBoxItem Content="Secretario Médico"/>
+                <ComboBoxItem Content="Auxiliar superior de apoyo"/>
+                <ComboBoxItem Content="Administrador de Recursos Humanos"/>
+            </ComboBox>
+            <Label x:Name="label2" Content="Sueldo mensual: " HorizontalAlignment="Left" Margin="25,164,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TxtSueldo" HorizontalAlignment="Left" Height="23" Margin="155,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+            <DatePicker x:Name="TxtFecha" HorizontalAlignment="Left" Margin="150,85,0,0" VerticalAlignment="Top" Width="190"/>
 
-    </Grid>
+
+        </Grid>
+    </Border>
 </Window>
